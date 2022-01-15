@@ -15,7 +15,6 @@ shinyUI(fluidPage(
             selectInput("setvar", "Choose a variable:",
                         choices = c("mpg", "cyl", "disp", "hp", "drat", "wt")),
             
-            # uiOutput("rockvars"),            
             
             
             sliderInput("bins",
@@ -25,9 +24,9 @@ shinyUI(fluidPage(
                         value = 30)
         ),
 
-        # Show a plot of the generated distribution
+        # Show a plot of the generated d
         mainPanel(
-            plotOutput("distPlot")
+            plotOutput("histPlot")
         )
     )
 ))
